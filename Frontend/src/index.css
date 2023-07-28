@@ -1,0 +1,175 @@
+:root {
+  /* Colores para el tema claro */
+  --texto-color: #333;
+  --fondo-color: #f8f8f8;
+  --enlace-color: #666;
+  --boton-fondo-color: #444;
+}
+
+/* Estilos para el tema oscuro */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --texto-color: #eee; /* Color de texto en tema oscuro */
+    --fondo-color: #222; /* Color de fondo en tema oscuro */
+    --enlace-color: #c0c0c0; /* Color de enlace en tema oscuro */
+    --boton-fondo-color: #747bff; /* Color de fondo de botón en tema oscuro */
+  }
+}
+
+body {
+  color: var(--texto-color);
+  background-color: var(--fondo-color);
+  font-family: Arial, sans-serif;
+  margin: 5%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: var(--enlace-color);
+}
+
+p {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin: 0;
+}
+
+a {
+  color: var(--enlace-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--boton-fondo-color);
+}
+
+button {
+  background-color: var(--boton-fondo-color);
+  color: var(--fondo-color);
+  font-size: 1.4rem;
+  padding: 1rem 2rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  margin: 20px;
+}
+
+button:hover {
+  background-color: var(--enlace-color);
+  color: var(--fondo-color);
+}
+
+/* ------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------- */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #747bff;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  z-index: 999;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.navbar-item {
+  margin-left: 1rem;
+  margin-bottom: 0;
+}
+
+/* ------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------- */
+
+.Form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------- */
+
+/* Estilos generales para el componente */
+.ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.li {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #333; /* Color de borde más oscuro */
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  color: black; /* Color de fondo más claro */
+}
+
+/* Estilos para los elementos de información */
+.li-strong {
+  color: #555; /* Color de texto para el contenido en negrita */
+}
+
+li.no-bullet {
+  list-style: none;
+}
+
+
+.pequeño {
+  background-color: red;
+  color: white;
+  font-size: 0.8rem;
+  margin: 5px;
+  padding: 5px;
+}
+
+.verde {
+  background-color: green;
+}
