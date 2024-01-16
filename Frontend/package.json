@@ -6,9 +6,9 @@
   "type": "module",
   "scripts": {
     "predeploy": "cd Frontend && npm run build",
-    "deploy": "gh-pages -d Frontend/build",
+    "deploy": "gh-pages -d Frontend/dist",
     "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "lint": "eslint Frontend --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
