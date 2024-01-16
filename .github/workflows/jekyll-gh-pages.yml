@@ -27,21 +27,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: 'Frontend'
     steps:
-      - name: Verificar
-        run: |
-          ls -la
-          pwd
-
-      - name: Cambiar
-        working-directory: mi_directorio
-        run: |
-          ls -la
-          pwd
-    
       - name: Checkout
         uses: actions/checkout@v4
       - name: Set up Node
