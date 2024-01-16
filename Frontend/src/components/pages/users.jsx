@@ -13,7 +13,7 @@ const Users = () => {
     useEffect(() => {
         // Realiza la solicitud GET al servidor
         axios
-            .get("http://localhost:3000/users")
+            .get("https://final-project-05vk.onrender.com/users")
             .then((response) => {
                 // Si la solicitud es exitosa, accede a los datos devueltos por el servidor
                 setData(response.data);
@@ -26,7 +26,7 @@ const Users = () => {
 
     const deleteUser = (userId) => {
         axios
-            .delete(`http://localhost:3000/users/${userId}`)
+            .delete(`https://final-project-05vk.onrender.com/users/${userId}`)
             .then((response) => {
                 console.log("Respuesta del servidor:", response.data);
                 alert("Usuario Eliminado");

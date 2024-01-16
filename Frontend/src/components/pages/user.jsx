@@ -12,7 +12,7 @@ const User = () => {
     useEffect(() => {
         // Realiza la solicitud GET al servidor
         axios
-            .get("http://localhost:3000/users")
+            .get("https://final-project-05vk.onrender.com/users")
             .then((response) => {
                 // Si la solicitud es exitosa, accede a los datos devueltos por el servidor
                 setUsers(response.data);

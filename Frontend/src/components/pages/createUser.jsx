@@ -22,7 +22,7 @@ function CreateUser() {
 
     const createUser = () => {
         axios.post(
-            "http://localhost:3000/users",
+            "https://final-project-05vk.onrender.com/users",
             {
                 name: name,
                 last_name: lastName,
