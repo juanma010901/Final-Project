@@ -33,4 +33,10 @@ const mongoConnect = async () => {
 app.use('/users', userRouter);
 mongoConnect();
 
-module.exports = app;
+const PORT = process.env.PORT
+
+app.listen(PORT, () => {
+    console.log("Server is running on port " + PORT)
+})
+
+//module.exports = app;
